@@ -2,7 +2,7 @@
 class Employee {
 	int id;
 	String name;
-	String organization;
+	String organization = "Intellect";
 
 	public Employee(String empName, int empId, String empOrganization){
 		System.out.println("Inside parameterised constructor");
@@ -10,6 +10,13 @@ class Employee {
 		name = empName;
 		organization = empOrganization;
 
+
+	}
+
+	public Employee(String empName, int empId){
+		System.out.println("Inside parameterised constructor with two parameters");
+		id = empId;
+		name = empName;
 
 	}
 
@@ -44,14 +51,15 @@ class Employee {
 
 public class EmployeeTest {
 	public static void main(String[] arg){
-		Employee emp1 = new Employee();// default constructor
-		Employee amanEmp = new Employee("Aman", 1092, "Intellect");
+		// Employee emp1 = new Employee();// default constructor
+		Employee amanEmp = new Employee("Aman", 1092);
+		Employee trainerData = new Employee("Kavita", 1234, "Trainer-company");
 		//aman, 1092, Intellect
 		// emp1.setId(120);
 		// emp1.setName("Kavita");
 		// emp1.setOrganization("Trainer");
-		System.out.println(amanEmp.getId());
-		System.out.println(amanEmp.getName());
+		// System.out.println(amanEmp.getId());
+		System.out.println(trainerData.getOrganization());
 		System.out.println(amanEmp.getOrganization());
 	}
 }
