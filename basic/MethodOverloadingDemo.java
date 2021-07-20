@@ -13,9 +13,7 @@ class MethodOverloadingDemo {
 	static int addition(int x, int y){
 		return x+y;
 	}
-	static int addition(int x, int y){
-		return x+y;
-	}
+	
 
 	static int addition(int x, int y, int z){
 		System.out.println("int method is called");
