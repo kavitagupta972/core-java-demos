@@ -13,7 +13,7 @@ class MultipleCatchDemo
 
      	}catch(ArithmeticException exception) {
      		System.out.println("Exception has occured while dividing x/y " + exception);
-     	} catch(ArrayIndexOutOfBoundsException e){
+     	}catch(ArrayIndexOutOfBoundsException e){
         System.out.println("Error in arr array of out of index ");
       }finally {
         //close resources
